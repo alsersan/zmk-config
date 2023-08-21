@@ -21,7 +21,7 @@
     timeout-ms = <50>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
-    layers = <0>; \
+    layers = <DEFAULT>; \
   };
 
 / {
@@ -40,8 +40,8 @@
 
     combos {
         compatible = "zmk,combos";
-        COMBO(esc, &kp ESC, 1 2)
-        COMBO(tab, &kp TAB, 9 10)
+        COMBO(esc, &kp ESC, 30 31)
+        COMBO(tab, &kp TAB, 32 33)
     };
 
     conditional_layers {
