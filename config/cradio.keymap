@@ -40,8 +40,8 @@
 
     combos {
         compatible = "zmk,combos";
-        COMBO(esc, &kp ESC, 31 32)
-        COMBO(tab, &kp TAB, 33 34)
+        COMBO(esc, &kp ESC, 1 2)
+        COMBO(tab, &kp TAB, 9 10)
     };
 
     conditional_layers {
