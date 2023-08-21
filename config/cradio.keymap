@@ -15,6 +15,15 @@
 #define HRML(k1,k2,k3,k4) &ht LGUI k1  &ht LALT k2  &ht LCTRL k3  &ht LSHFT k4
 #define HRMR(k1,k2,k3,k4) &ht RSHFT k1  &ht RCTRL k2  &ht RALT k3  &ht RGUI k4
 
+// Combos 
+#define COMBO(NAME, BINDINGS, KEYPOS) \
+  combo_##NAME { \
+    timeout-ms = <50>; \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <DEFAULT>; \
+  };
+
 / {
     behaviors {
         ht: hold_tap {
@@ -31,16 +40,8 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <100>;
-            key-positions = <31 32>;
-            bindings = <&kp ESC>;
-        };
-        combo_tab {
-            timeout-ms = <100>;
-            key-positions = <33 34>;
-            bindings = <&kp TAB>;
-        };
+        COMBO(esc, &kp ESC, 31 32)
+        COMBO(tab, &kp TAB, 33 34)
     };
 
     conditional_layers {
