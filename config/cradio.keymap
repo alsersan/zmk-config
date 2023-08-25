@@ -103,7 +103,7 @@
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮     
             &kp EXCL   &kp QMARK  &kp LPAR   &kp RPAR   &kp UNDER      &kp HASH   &kp EQUAL  &kp LT     &kp GT     &kp PLUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤        
-            &kp GRAVE  &kp DLLR   &kp LBRC   &kp RBRC   &kp PIPE       &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp MINUS
+           HRML(GRAVE,   DLLR,      LBRC,      RBRC)    &kp PIPE       &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp MINUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤        
             &kp TILDE  &kp PRCNT  &kp LBKT   &kp RBKT   &kp AMPS       &kp ASTRK  &kp COLON  &kp CARET  &kp BSLH   &kp AT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
